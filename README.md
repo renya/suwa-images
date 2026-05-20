@@ -30,3 +30,11 @@ Get-ChildItem -File -Recurse | Rename-Item -NewName { $_.Name.ToLower() }
 ```
 
 Run in PowerShell, not cmd.exe.
+
+# ffmpeg
+
+# Web用mp4生成
+ffmpeg -i input.mov -vf "scale=1280:-1" -crf 30 -movflags +faststart output-web.mp4
+
+# poster画像生成
+ffmpeg -i output-web.mp4 -frames:v 1 output-poster.jpg
