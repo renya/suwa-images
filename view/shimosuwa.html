@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>Three Points Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+</style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<script>
+
+const map = L.map('map');
+
+<!-- 緯度経度を左クリックで表示するJavaScript-->
+map.on('click', function(e) {
+    L.popup()
+        .setLatLng(e.latlng)
+        .setContent(
+            e.latlng.lat.toFixed(6) +
+            ", " +
+            e.latlng.lng.toFixed(6)
+        )
+        .openOn(map);
+});
+
+L.tileLayer(
+    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+        attribution: '&copy; OpenStreetMap contributors'
+    }
+).addTo(map);
+
+const points = [
+    [36.050109, 138.086107], // 諏訪湖中心
+    [36.060671, 138.074675], // 諏訪湖岡谷側
+    [36.129684, 138.078569], // 西側部
+    [36.166472, 138.127835], // 三峰山3境界
+    [36.112504, 138.171632], // 八島湿原東南部
+    [36.060623, 138.109049], // 諏訪湖諏訪市側
+    [36.050109, 138.086107]  // 最初へ戻る
+];
+
+const markers = [];
+
+points.forEach((p, i) => {
+
+const marker = L.circleMarker(p, {
+    radius: 3,          // 点のサイズ (半径(px))
+    color: '#666',      // 点の線の色 (外周色)
+    fillColor: '#666',  // 点の内部色 (内部塗り色)
+    fillOpacity: 0.5    // 点の透明度 (不透明度)
+})
+        .addTo(map)
+        .bindPopup(
+            "Point " + (i + 1) + "<br>" +
+            p[0] + ", " + p[1]
+        );
+
+    markers.push(marker);
+});
+
+const polyline = L.polyline(points, {
+    color: '#3388ff', // 線の色を指定
+    weight: 2,        // 線の太さ
+    opacity: 0.6      // 透明度
+}).addTo(map);
+
+const group = L.featureGroup(markers);
+
+map.fitBounds(group.getBounds(), {
+    padding: [30, 30]
+});
+
+</script>
+
+</body>
+</html>
