@@ -132,9 +132,14 @@ const polygon = L.polygon(points, {
 
 const group = L.featureGroup(markers);
 
-map.fitBounds(group.getBounds(), {
-    padding: [30, 30]
-});
+// URL指定が無い時だけ全体表示
+if (isNaN(lat) || isNaN(lng)) {
+
+    map.fitBounds(group.getBounds(), {
+        padding: [30, 30]
+    });
+
+}
 
 </script>
 
