@@ -37,11 +37,12 @@ const params = new URLSearchParams(window.location.search);
 
 const lat = parseFloat(params.get('lat'));
 const lng = parseFloat(params.get('lng'));
+const name = params.get('name');
 
 // 緯度経度がある場合
 if (!isNaN(lat) && !isNaN(lng)) {
 
-    // 指定地点へ移動
+// 緯度経度がある場合
     map.setView([lat, lng], 14);
 
     // 指定地点にマーカー表示
@@ -52,7 +53,7 @@ if (!isNaN(lat) && !isNaN(lng)) {
         fillOpacity: 0.9
     })
     .addTo(map)
-    .bindPopup(lat + ", " + lng)
+    .bindPopup(name || (lat + ", " + lng))
     .openPopup();
 
 }
