@@ -32,6 +32,31 @@ html, body {
 
 const map = L.map('map');
 
+// URLパラメータ取得
+const params = new URLSearchParams(window.location.search);
+
+const lat = parseFloat(params.get('lat'));
+const lng = parseFloat(params.get('lng'));
+
+// 緯度経度がある場合
+if (!isNaN(lat) && !isNaN(lng)) {
+
+    // 指定地点へ移動
+    map.setView([lat, lng], 14);
+
+    // 指定地点にマーカー表示
+    L.circleMarker([lat, lng], {
+        radius: 6,
+        color: '#ff3333',
+        fillColor: '#ff3333',
+        fillOpacity: 0.9
+    })
+    .addTo(map)
+    .bindPopup(lat + ", " + lng)
+    .openPopup();
+
+}
+
 // 緯度経度を左クリックで表示するJavaScript
 map.on('click', function(e) {
     L.popup()
