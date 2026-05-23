@@ -38,12 +38,13 @@ const params = new URLSearchParams(window.location.search);
 const lat = parseFloat(params.get('lat'));
 const lng = parseFloat(params.get('lng'));
 const name = params.get('name');
+const zoom = parseInt(params.get('zoom')) || 14;
 
 // 緯度経度がある場合
 if (!isNaN(lat) && !isNaN(lng)) {
 
 // 緯度経度がある場合
-    map.setView([lat, lng], 14);
+    map.setView([lat, lng], zoom);
 
     // 指定地点にマーカー表示
     L.circleMarker([lat, lng], {
