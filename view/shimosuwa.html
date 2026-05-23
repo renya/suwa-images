@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
-<title>下諏訪町地図｜shimosuwa.info</title>
+<title>下諏訪町地図｜suwa.info</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet"
@@ -21,12 +21,38 @@ html, body {
     width: 100%;
     height: 100vh;
 }
+
+#home-link {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.9);
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+#home-link:hover {
+    background: white;
+}
+
 </style>
 </head>
 
 <body>
 
 <div id="map"></div>
+
+<a id="home-link" href="https://shimosuwa.info/">
+    shimosuwa.info
+</a>
 
 <script>
 

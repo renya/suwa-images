@@ -72,6 +72,35 @@ map.fitBounds(polyline.getBounds());
 
 L.marker(route[0]).addTo(map).bindPopup("Start");
 L.marker(route[route.length - 1]).addTo(map).bindPopup("Goal");
+
+// 左下に shimosuwa.info リンク表示
+const homeLink = L.control({ position: 'bottomleft' });
+
+homeLink.onAdd = function () {
+    const div = L.DomUtil.create('div', 'home-link');
+
+    div.innerHTML = `
+        <a href="https://shimosuwa.info/"
+           target="_blank"
+           style="
+               display:inline-block;
+               background:white;
+               padding:8px 14px;
+               border-radius:12px;
+               box-shadow:0 1px 5px rgba(0,0,0,0.3);
+               text-decoration:none;
+               color:#333;
+               font-size:14px;
+               font-family:sans-serif;
+           ">
+           shimosuwa.info
+        </a>
+    `;
+
+    return div;
+};
+
+homeLink.addTo(map);
 </script>
 
 </body>
