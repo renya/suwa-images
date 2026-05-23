@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
-<title>下諏訪町地図｜shimosuwa.info</title>
+<title>Three Points Map</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet"
@@ -95,12 +95,10 @@ const marker = L.circleMarker(p, {
     markers.push(marker);
 });
 
-const polygon = L.polygon(points, {
-    color: '#3388ff',     // 線の色を指定
-    weight: 2,            // 線の太さ
-    opacity: 0.6,         // 線の透明度
-    fillColor: '#66aaff', // 内側の塗り色
-    fillOpacity: 0.15     // 内側の透明度
+const polyline = L.polyline(points, {
+    color: '#3388ff', // 線の色を指定
+    weight: 2,        // 線の太さ
+    opacity: 0.6      // 透明度
 }).addTo(map);
 
 const group = L.featureGroup(markers);

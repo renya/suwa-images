@@ -44,7 +44,7 @@ html, body {
 <script>
 const map = L.map('map').setView([36.125471342074476, 138.11364426545353], 11);
 
-<!-- 緯度経度を左クリックで表示するJavaScript-->
+// 緯度経度を左クリックで表示するJavaScript
 map.on('click', function(e) {
     L.popup()
         .setLatLng(e.latlng)
