@@ -9,7 +9,6 @@
 href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/togeojson@0.16.0/dist/togeojson.umd.js"></script>
 
 <style>
 html, body {
@@ -66,7 +65,6 @@ const lat = parseFloat(params.get('lat'));
 const lng = parseFloat(params.get('lng'));
 const name = params.get('name');
 const zoom = parseInt(params.get('zoom')) || 14;
-const gpx = params.get('gpx');
 
 // 緯度経度がある場合
 if (!isNaN(lat) && !isNaN(lng)) {
@@ -99,41 +97,6 @@ fetch("shimosuwa.geojson")
   .then(data => {
 
 const layer = L.geoJSON(data, {
-
-// GPX読み込み
-if (gpx) {
-
-    fetch(gpx)
-      .then(response => response.text())
-      .then(str => {
-
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(str, "text/xml");
-
-        const geojson = toGeoJSON.gpx(xml);
-
-        const gpxLayer = L.geoJSON(geojson, {
-
-            style: {
-                color: "red",
-                weight: 5,
-                opacity: 0.9
-            }
-
-        }).addTo(map);
-
-        // lat/lng指定が無い時だけ全体表示
-        if (isNaN(lat) || isNaN(lng)) {
-
-            map.fitBounds(gpxLayer.getBounds(), {
-                padding: [20, 20]
-            });
-
-        }
-
-      });
-
-}
 
   // Point（label用の点）を青い円に変更
   pointToLayer: function(feature, latlng) {
