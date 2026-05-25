@@ -97,10 +97,22 @@ L.tileLayer(
 // map-data.js のポイントを追加
 pointLinks.forEach(point => {
 
-    const marker = L.marker([
-        point.lat,
-        point.lng
-    ]).addTo(map);
+//    標準マーカ
+//    const marker = L.marker([
+//        point.lat,
+//        point.lng
+//    ]).addTo(map);
+
+const marker = L.circleMarker(
+    [point.lat, point.lng],
+    {
+        radius: 6,
+        color: "#ff3333",
+        weight: 2,
+        fillColor: "#ff3333",
+        fillOpacity: 0.9
+    }
+).addTo(map);
 
     marker.bindTooltip(point.name);
 
