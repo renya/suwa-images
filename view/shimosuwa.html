@@ -103,6 +103,7 @@ pointLinks.forEach(point => {
 //        point.lng
 //    ]).addTo(map);
 
+// 　　マーカを赤丸に
 const marker = L.circleMarker(
     [point.lat, point.lng],
     {
@@ -118,7 +119,10 @@ const marker = L.circleMarker(
 
     marker.on('click', function() {
 
-        window.location.href = point.url;
+    // map click を止める
+    L.DomEvent.stopPropagation(e);
+
+    window.location.href = point.url;
 
     });
 
