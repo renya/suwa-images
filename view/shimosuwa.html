@@ -123,6 +123,8 @@ marker.on('click', function(e) {
     // map側clickイベント停止
     L.DomEvent.stopPropagation(e);
 
+    alert(point.url);
+    
     // ページ移動
     window.location.href = point.url;
 
