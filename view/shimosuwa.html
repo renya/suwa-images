@@ -212,25 +212,6 @@ if (gpx) {
 
   });
 
-// 緯度経度を左クリックで表示
-map.on('click', function(e) {
-
-    // markerクリック時は無視
-    if (e.originalEvent.target.closest('.leaflet-interactive')) {
-        return;
-    }
-
-    L.popup()
-        .setLatLng(e.latlng)
-        .setContent(
-            e.latlng.lat.toFixed(6) +
-            ", " +
-            e.latlng.lng.toFixed(6)
-        )
-        .openOn(map);
-
-});
-
 </script>
 
 </body>
