@@ -94,9 +94,11 @@ L.tileLayer(
     }
 ).addTo(map);
 
+// map-data.js のポイントを地図に追加
 pointLinks.forEach(point => {
 
-  L.circleMarker(
+  // 赤い円マーカー作成
+  const marker = L.circleMarker(
     [point.lat, point.lng],
     {
       radius: 6,
@@ -106,10 +108,20 @@ pointLinks.forEach(point => {
       fillOpacity: 0.9
     }
   )
-  .addTo(map)
-  .bindPopup(point.name)
-  .on('click', function() {
 
+  // 地図へ追加
+  .addTo(map)
+
+  // 名前popup表示
+  .bindPopup(point.name);
+
+  // markerクリック時
+  marker.on('click', function(e) {
+
+    // map側clickイベント停止
+    L.DomEvent.stopPropagation(e);
+
+    // 記事ページを新タブで開く
     window.open(
       point.url,
       '_blank'
