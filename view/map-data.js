@@ -6,6 +6,7 @@ const pointLinks = [
     lng: 138.081933,
     url: "https://shimosuwa.info/pages/万治の石仏/"
   }
+  
   {
     name: "石投場",
     lat: 36.067703,
