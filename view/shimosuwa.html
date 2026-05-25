@@ -97,30 +97,15 @@ L.tileLayer(
 // map-data.js のポイントを追加
 pointLinks.forEach(point => {
 
-//    標準マーカ
-//    const marker = L.marker([
-//        point.lat,
-//        point.lng
-//    ]).addTo(map);
+// 標準マーカ
+const marker = L.marker([
+    point.lat,
+    point.lng
+]).addTo(map);
 
-// 　　マーカを赤丸に
-const marker = L.circleMarker(
-    [point.lat, point.lng],
-    {
-        radius: 12, // 6→12
-        color: "#ff3333",
-        weight: 2,
-        fillColor: "#ff3333",
-        fillOpacity: 0.9
-    }
-).addTo(map);
+marker.bindTooltip(point.name);
 
-    marker.bindTooltip(point.name);
-
-marker.on('click', function(e) {
-
-    // map click を止める
-    L.DomEvent.stopPropagation(e);
+marker.on('click', function() {
 
     window.location.href = point.url;
 
@@ -135,16 +120,18 @@ fetch("shimosuwa.geojson")
 
 const layer = L.geoJSON(data, {
 
-  // Point（label用の点）を青い円に変更⇒なしに
-pointToLayer: function(feature, latlng) {
+  // Point（label用の点）を青い円に変更
+  pointToLayer: function(feature, latlng) {
 
     return L.circleMarker(latlng, {
-      radius: 0,
-      opacity: 0,
-      fillOpacity: 0
+      radius: 6,
+      color: "#3388ff",
+      weight: 2,
+      fillColor: "#3388ff",
+      fillOpacity: 0.6
     });
 
-},
+  },
 
   // Polygon（境界線）のスタイル
   style: function(feature) {
