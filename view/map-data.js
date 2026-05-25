@@ -1,4 +1,4 @@
-const pointLinks = [
+window.pointLinks = [
 
   {
     name: "万治の石仏",
