@@ -10,7 +10,6 @@ href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/@tmcw/togeojson@5.8.1/dist/togeojson.umd.js"></script>
-<script src="map-data.js"></script>
 
 <style>
 html, body {
@@ -58,9 +57,7 @@ html, body {
 
 <script>
 
-const map = L.map('map', {
-    doubleClickZoom: false
-});
+const map = L.map('map');
 
 // URLパラメータ取得
 const params = new URLSearchParams(window.location.search);
@@ -96,42 +93,6 @@ L.tileLayer(
     }
 ).addTo(map);
 
-// map-data.js のポイントを地図に追加
-pointLinks.forEach(point => {
-
-  // 赤い円マーカー作成
-  const marker = L.circleMarker(
-    [point.lat, point.lng],
-    {
-      radius: 6,
-      color: "#ff3333",
-      weight: 2,
-      fillColor: "#ff3333",
-      fillOpacity: 0.9
-    }
-  )
-
-  // 地図へ追加
-  .addTo(map)
-
-  // 名前popup表示
-//   .bindPopup(point.name);
-
-  // markerクリック時
-marker.on('click', function(e) {
-
-    // map側clickイベント停止
-    L.DomEvent.stopPropagation(e);
-
-    alert(point.url);
-    
-    // ページ移動
-    window.location.href = point.url;
-
-});
-
-});
-
 // GeoJSON読み込み
 fetch("shimosuwa.geojson")
   .then(response => response.json())
@@ -140,7 +101,7 @@ fetch("shimosuwa.geojson")
 const layer = L.geoJSON(data, {
 
   // Point（label用の点）を青い円に変更
-pointToLayer: function(feature, latlng) {
+  pointToLayer: function(feature, latlng) {
 
     return L.circleMarker(latlng, {
       radius: 6,
@@ -150,7 +111,7 @@ pointToLayer: function(feature, latlng) {
       fillOpacity: 0.6
     });
 
-},
+  },
 
   // Polygon（境界線）のスタイル
   style: function(feature) {
@@ -212,6 +173,20 @@ if (gpx) {
     }
 
   });
+
+// 緯度経度を左クリックで表示
+map.on('click', function(e) {
+
+    L.popup()
+        .setLatLng(e.latlng)
+        .setContent(
+            e.latlng.lat.toFixed(6) +
+            ", " +
+            e.latlng.lng.toFixed(6)
+        )
+        .openOn(map);
+
+});
 
 </script>
 
