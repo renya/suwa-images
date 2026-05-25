@@ -93,6 +93,24 @@ L.tileLayer(
     }
 ).addTo(map);
 
+// map-data.js のポイントを追加
+pointLinks.forEach(point => {
+
+    const marker = L.marker([
+        point.lat,
+        point.lng
+    ]).addTo(map);
+
+    marker.bindTooltip(point.name);
+
+    marker.on('click', function() {
+
+        window.location.href = point.url;
+
+    });
+
+});
+
 // GeoJSON読み込み
 fetch("shimosuwa.geojson")
   .then(response => response.json())
