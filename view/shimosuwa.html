@@ -117,14 +117,14 @@ const marker = L.circleMarker(
 
     marker.bindTooltip(point.name);
 
-    marker.on('click', function() {
+marker.on('click', function(e) {
 
     // map click を止める
     L.DomEvent.stopPropagation(e);
 
     window.location.href = point.url;
 
-    });
+});
 
 });
 
