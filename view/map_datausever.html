@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>下諏訪町地図｜shimosuwa.info</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+#home-link {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.9);
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+#home-link:hover {
+    background: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<a id="home-link" href="https://shimosuwa.info/">
+    shimosuwa.info
+</a>
+
+<script src="map-data.js"></script>
+<script>
+
+const map = L.map('map');
+
+// URLパラメータ取得
+const params = new URLSearchParams(window.location.search);
+
+const lat = parseFloat(params.get('lat'));
+const lng = parseFloat(params.get('lng'));
+const name = params.get('name');
+const zoom = parseInt(params.get('zoom')) || 14;
+
+// 緯度経度がある場合
+if (!isNaN(lat) && !isNaN(lng)) {
+
+    map.setView([lat, lng], zoom);
+
+    // 指定地点にマーカー表示
+    L.circleMarker([lat, lng], {
+        radius: 6,
+        color: '#ff3333',
+        fillColor: '#ff3333',
+        fillOpacity: 0.9
+    })
+    .addTo(map)
+    .bindPopup(name || (lat + ", " + lng))
+    .openPopup();
+
+}
+
+// 緯度経度を左クリックで表示するJavaScript
+map.on('click', function(e) {
+    L.popup()
+        .setLatLng(e.latlng)
+        .setContent(
+            e.latlng.lat.toFixed(6) +
+            ", " +
+            e.latlng.lng.toFixed(6)
+        )
+        .openOn(map);
+});
+
+L.tileLayer(
+    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+        attribution: '&copy; OpenStreetMap contributors'
+    }
+).addTo(map);
+
+// 削除挿入開始
+const markers = [];
+
+points.forEach((p, i) => {
+
+const marker = L.circleMarker(p, {
+    radius: 3,          // 点のサイズ (半径(px))
+    color: '#666',      // 点の線の色 (外周色)
+    fillColor: '#666',  // 点の内部色 (内部塗り色)
+    fillOpacity: 0.5    // 点の透明度 (不透明度)
+})
+        .addTo(map)
+// 削除挿入終了
+        .bindPopup(
+            "Point " + (i + 1) + "<br>" +
+            p[0] + ", " + p[1]
+        );
+
+    markers.push(marker);
+});
+
+const polygon = L.polygon(points, {
+    color: '#3388ff',     // 線の色を指定
+    weight: 2,            // 線の太さ
+    opacity: 0.6,         // 線の透明度
+    fillColor: '#66aaff', // 内側の塗り色
+    fillOpacity: 0.15     // 内側の透明度
+}).addTo(map);
+
+const group = L.featureGroup(markers);
+
+// URL指定が無い時だけ全体表示
+if (isNaN(lat) || isNaN(lng)) {
+
+    map.fitBounds(group.getBounds(), {
+        padding: [30, 30]
+    });
+
+}
+
+</script>
+
+</body>
+</html>
