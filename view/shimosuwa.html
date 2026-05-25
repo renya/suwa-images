@@ -9,7 +9,7 @@
 href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/togeojson@0.16.0/dist/togeojson.umd.js"></script>
+<script src="https://unpkg.com/@tmcw/togeojson@5.8.1/dist/togeojson.umd.js"></script>
 
 <style>
 html, body {
@@ -100,6 +100,34 @@ fetch("shimosuwa.geojson")
 
 const layer = L.geoJSON(data, {
 
+  // Point（label用の点）を青い円に変更
+  pointToLayer: function(feature, latlng) {
+
+    return L.circleMarker(latlng, {
+      radius: 6,
+      color: "#3388ff",
+      weight: 2,
+      fillColor: "#3388ff",
+      fillOpacity: 0.6
+    });
+
+  },
+
+  // Polygon（境界線）のスタイル
+  style: function(feature) {
+
+    return {
+      color: "#3388ff",
+      weight: 2,
+      opacity: 0.7,
+      fillColor: "#66aaff",
+      fillOpacity: 0.1
+    };
+
+  }
+
+}).addTo(map);
+
 // GPX読み込み
 if (gpx) {
 
@@ -135,35 +163,7 @@ if (gpx) {
 
 }
 
-  // Point（label用の点）を青い円に変更
-  pointToLayer: function(feature, latlng) {
-
-    return L.circleMarker(latlng, {
-      radius: 6,
-      color: "#3388ff",
-      weight: 2,
-      fillColor: "#3388ff",
-      fillOpacity: 0.6
-    });
-
-  },
-
-  // Polygon（境界線）のスタイル
-  style: function(feature) {
-
-    return {
-      color: "#3388ff",
-      weight: 2,
-      opacity: 0.7,
-      fillColor: "#66aaff",
-      fillOpacity: 0.1
-    };
-
-  }
-
-}).addTo(map);
-
-    // URL指定が無い時だけ全体表示
+  // URL指定が無い時だけ全体表示
     if (isNaN(lat) || isNaN(lng)) {
 
       map.fitBounds(layer.getBounds(), {
