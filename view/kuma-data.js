@@ -1,7 +1,7 @@
 window.pointLinks = [
 
   {
-    name: "原村5月4日",
+    name: "原村26年5月4日",
     type: ["bear"],
     year: 2026,
     lat: 35.9407174,
@@ -9,7 +9,7 @@ window.pointLinks = [
     url: "https://shimosuwa.info/pages/諏訪地方のクマ情報2026/"
   },
   {
-    name: "諏訪市5月17日",
+    name: "諏訪市26年5月17日",
     type: ["bear"],
     year: 2026,
     lat: 36.01129303706496,
@@ -17,7 +17,7 @@ window.pointLinks = [
     url: "https://shimosuwa.info/pages/諏訪地方のクマ情報2026/"
   },
   {
-    name: "岡谷市5月22日",
+    name: "岡谷市26年5月22日",
     type: ["bear"],
     year: 2026,
     lat: 36.0423717,
