@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>下諏訪町地図｜shimosuwa.info</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@tmcw/togeojson@5.8.1/dist/togeojson.umd.js"></script>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+#home-link {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.9);
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+#home-link:hover {
+    background: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<a id="home-link" href="https://shimosuwa.info/">
+    shimosuwa.info
+</a>
+
+<script>
+
+const map = L.map('map');
+
+// URLパラメータ取得
+const params = new URLSearchParams(window.location.search);
+
+const lat = parseFloat(params.get('lat'));
+const lng = parseFloat(params.get('lng'));
+const name = params.get('name');
+const zoom = parseInt(params.get('zoom')) || 14;
+const gpx = params.get('gpx');
+
+// points=points-jinja.js,points-spot.js
+const pointsParam = params.get('points');
+
+// 緯度経度がある場合
+if (!isNaN(lat) && !isNaN(lng)) {
+
+    map.setView([lat, lng], zoom);
+
+    // 指定地点にマーカー表示
+    L.circleMarker([lat, lng], {
+        radius: 6,
+        color: '#ff3333',
+        fillColor: '#ff3333',
+        fillOpacity: 0.9
+    })
+    .addTo(map)
+    .bindPopup(name || (lat + ", " + lng))
+    .openPopup();
+
+}
+
+L.tileLayer(
+    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+        attribution: '&copy; OpenStreetMap contributors'
+    }
+).addTo(map);
+
+// =====================
+// points 読み込み
+// =====================
+
+if (pointsParam) {
+
+    const files = pointsParam.split(',');
+
+    files.forEach(file => {
+
+        const script = document.createElement('script');
+
+        script.src = file.trim();
+
+        script.onload = function() {
+
+            if (window.pointLinks) {
+
+                pointLinks.forEach(point => {
+
+                    const marker = L.marker([
+                        point.lat,
+                        point.lng
+                    ]).addTo(map);
+
+                    marker.bindTooltip(point.name);
+
+                    marker.on('click', function() {
+
+                        window.location.href = point.url;
+
+                    });
+
+                });
+
+            }
+
+        };
+
+        document.head.appendChild(script);
+
+    });
+
+}
+
+// =====================
+// GeoJSON読み込み
+// =====================
+
+fetch("suwa6.geojson")
+  .then(response => response.json())
+  .then(data => {
+
+const layer = L.geoJSON(data, {
+
+  // Point（label用の点）
+  pointToLayer: function(feature, latlng) {
+
+    return L.circleMarker(latlng, {
+      radius: 6,
+      color: "#3388ff",
+      weight: 2,
+      fillColor: "#3388ff",
+      fillOpacity: 0.6
+    });
+
+  },
+
+  // Polygon（境界線）のスタイル
+  style: function(feature) {
+
+    return {
+      color: "#3388ff",
+      weight: 2,
+      opacity: 0.7,
+      fillColor: "#66aaff",
+      fillOpacity: 0.1
+    };
+
+  }
+
+}).addTo(map);
+
+// =====================
+// GPX読み込み
+// =====================
+
+if (gpx) {
+
+    fetch(gpx)
+      .then(response => response.text())
+      .then(str => {
+
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(str, "text/xml");
+
+        const geojson = toGeoJSON.gpx(xml);
+
+        const gpxLayer = L.geoJSON(geojson, {
+
+            style: {
+                color: "red",
+                weight: 5,
+                opacity: 0.9
+            }
+
+        }).addTo(map);
+
+        // lat/lng指定が無い時だけ全体表示
+        if (isNaN(lat) || isNaN(lng)) {
+
+            map.fitBounds(gpxLayer.getBounds(), {
+                padding: [20, 20]
+            });
+
+        }
+
+      });
+
+}
+
+  // URL指定が無い時だけ全体表示
+    if (isNaN(lat) || isNaN(lng)) {
+
+      map.fitBounds(layer.getBounds(), {
+        padding: [30, 30]
+      });
+
+    }
+
+  });
+
+// =====================
+// 緯度経度popup
+// =====================
+
+map.on('click', function(e) {
+
+    L.popup()
+        .setLatLng(e.latlng)
+        .setContent(
+            e.latlng.lat.toFixed(6) +
+            ", " +
+            e.latlng.lng.toFixed(6)
+        )
+        .openOn(map);
+
+});
+
+</script>
+
+</body>
+</html>
