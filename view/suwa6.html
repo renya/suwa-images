@@ -124,13 +124,19 @@ const enabledTypes = typeParam
 
 pointLinks.forEach(point => {
 
-    // type フィルタ
-    if (
-        enabledTypes &&
-        point.type &&
-        !enabledTypes.includes(point.type)
-    ) {
-        return;
+    // type指定がある時だけフィルタ
+    if (enabledTypes) {
+
+        // type未定義は除外
+        if (!point.type) {
+            return;
+        }
+
+        // type不一致は除外
+        if (!enabledTypes.includes(point.type)) {
+            return;
+        }
+
     }
 
     const marker = L.marker([
@@ -147,7 +153,8 @@ pointLinks.forEach(point => {
     });
 
 });
-            }
+
+}
 
         };
 
