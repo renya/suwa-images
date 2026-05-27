@@ -213,7 +213,7 @@ window.pointLinks = [
   {
     name: "みずべ公園",
     type: ["spot"],
-    _note: "no link from pages"
+    _note: "no link from pages",
     lat: 36.065084,
     lng: 138.089631,
     url: "https://shimosuwa.info/pages/みずべ公園/"
