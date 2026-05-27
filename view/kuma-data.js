@@ -4,8 +4,8 @@ window.pointLinks = [
     name: "原村26年5月4日",
     type: ["bear"],
     year: 2026,
-    lat: 35.9407174,
-    lng: 138.2260315,
+    lat: 35.940678,
+    lng: 138.226063,
     url: "https://shimosuwa.info/pages/諏訪地方のクマ情報2026/"
   },
   {
