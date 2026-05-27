@@ -71,6 +71,12 @@ const gpx = params.get('gpx');
 // points=points-jinja.js,points-spot.js
 const pointsParam = params.get('points');
 
+// overlay=kuma-data.js
+const overlayParam = params.get('overlay');
+
+// type=taisha,onbashira
+const typeParam = params.get('type');
+
 // 緯度経度がある場合
 if (!isNaN(lat) && !isNaN(lng)) {
 
@@ -97,12 +103,16 @@ L.tileLayer(
 ).addTo(map);
 
 // =====================
-// points 読み込み
+// points 読み込み関数
 // =====================
 
-if (pointsParam) {
+function loadPoints(filesString, useTypeFilter) {
 
-    const files = pointsParam.split(',');
+    if (!filesString) {
+        return;
+    }
+
+    const files = filesString.split(',');
 
     files.forEach(file => {
 
@@ -112,26 +122,55 @@ if (pointsParam) {
 
         script.onload = function() {
 
-            if (window.pointLinks) {
+            if (!window.pointLinks) {
+                return;
+            }
 
-                pointLinks.forEach(point => {
+            // type指定
+            const enabledTypes = typeParam
+                ? typeParam.split(',').map(t => t.trim())
+                : null;
 
-                    const marker = L.marker([
-                        point.lat,
-                        point.lng
-                    ]).addTo(map);
+            pointLinks.forEach(point => {
 
-                    marker.bindTooltip(point.name);
+                // typeフィルタを使う場合
+                if (useTypeFilter && enabledTypes) {
 
-                    marker.on('click', function() {
+                    // type未定義は除外
+                    if (!point.type) {
+                        return;
+                    }
 
-                        window.location.href = point.url;
+                    // 配列type対応
+                    const pointTypes = Array.isArray(point.type)
+                        ? point.type
+                        : [point.type];
 
-                    });
+                    // 一致判定
+                    const matched = pointTypes.some(type =>
+                        enabledTypes.includes(type)
+                    );
+
+                    if (!matched) {
+                        return;
+                    }
+
+                }
+
+                const marker = L.marker([
+                    point.lat,
+                    point.lng
+                ]).addTo(map);
+
+                marker.bindTooltip(point.name);
+
+                marker.on('click', function() {
+
+                    window.location.href = point.url;
 
                 });
 
-            }
+            });
 
         };
 
@@ -140,6 +179,12 @@ if (pointsParam) {
     });
 
 }
+
+// type対象
+loadPoints(pointsParam, true);
+
+// 常時表示
+loadPoints(overlayParam, false);
 
 // =====================
 // GeoJSON読み込み

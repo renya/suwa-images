@@ -85,6 +85,67 @@ view/
 
 ---
 
+## type
+
+points= 側へ適用されるフィルタ。
+
+```text
+?points=map-data.js&type=food
+```
+
+複数指定可能。
+
+```text
+?points=map-data.js&type=taisha,food
+```
+
+現在は OR 条件。
+
+つまり：
+
+```js
+type: ["taisha", "spot"]
+```
+
+は、
+
+```text
+type=taisha
+```
+
+でも、
+
+```text
+type=spot
+```
+
+でも表示される。
+
+---
+
+## overlay
+
+常時表示用 data.js。
+
+overlay 側には type フィルタは適用されない。
+
+```text
+?points=map-data.js&type=food&overlay=kuma-data.js
+```
+
+この場合：
+
+* map-data.js → food のみ表示
+* kuma-data.js → 全表示
+
+複数 overlay も可能。
+
+```text
+?overlay=kuma-data.js,hazard-data.js
+```
+
+---
+
 ## lat / lng
 
 指定地点へ移動。
@@ -159,8 +220,9 @@ tooltip に使用。
 
 分類用。
 
-現在は未使用だが、
-将来的な絞り込み・色分け用。
+現在は URL の type= フィルタに使用。
+
+配列形式。
 
 例：
 
@@ -168,7 +230,10 @@ tooltip に使用。
 type: ["onsen"]
 type: ["spot"]
 type: ["taisha", "spot"]
+type: ["food", "yado"]
 ```
+
+複数 type を持つことが可能。
 
 ---
 
@@ -215,6 +280,26 @@ _note: "ページ未リンク / 再確認要"
 * 時系列管理しやすい
 * Git差分が見やすい
 * 作業中断に強い
+
+---
+
+## type は配列
+
+現在の type は：
+
+```js
+type: ["spot"]
+```
+
+形式。
+
+将来的な複数カテゴリ対応を前提としている。
+
+例：
+
+```js
+type: ["food", "cafe", "wifi"]
+```
 
 ---
 
@@ -269,11 +354,44 @@ window.pointLinks = [...]
 
 のような複数表示が可能。
 
+さらに：
+
+```text
+?points=map-data.js&type=food&overlay=kuma-data.js
+```
+
+のように：
+
+* points = typeフィルタ対象
+* overlay = 常時表示
+
+という構成が可能。
+
+---
+
+# 現在の構造の特徴
+
+現在の構造では：
+
+* data.js を分割可能
+* type で横断分類可能
+* overlay で常時レイヤ追加可能
+* URLのみで地図切替可能
+
+となっている。
+
+実質的に：
+
+```text
+軽量GIS / 軽量POIデータベース
+```
+
+として動作する。
+
 ---
 
 # 今後の候補
 
-* type による絞り込み
 * marker色分け
 * アイコン変更
 * hover情報追加
