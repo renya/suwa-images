@@ -236,4 +236,3 @@ window.pointLinks = [
   }
 
 ];
-, 
