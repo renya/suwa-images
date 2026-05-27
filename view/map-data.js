@@ -217,6 +217,23 @@ window.pointLinks = [
     lat: 36.065084,
     lng: 138.089631,
     url: "https://shimosuwa.info/pages/みずべ公園/"
+  },
+  {
+    name: "棚木場",
+    type: ["spot"],
+    _note: "with link from pages",
+    lat: 36.108603454145566,
+    lng: 138.12840882855411,
+    url: "https://shimosuwa.info/pages/棚木場/"
+  },
+  {
+    name: "注連掛",
+    type: ["spot"],
+    _note: "with link from pages",
+    lat: 36.09348464839386,
+    lng: 138.08562273432045,
+    url: "https://shimosuwa.info/pages/注連掛/"
   }
 
 ];
+, 
