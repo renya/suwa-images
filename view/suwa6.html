@@ -132,8 +132,17 @@ pointLinks.forEach(point => {
             return;
         }
 
-        // type不一致は除外
-        if (!enabledTypes.includes(point.type)) {
+        // 配列type対応
+        const pointTypes = Array.isArray(point.type)
+            ? point.type
+            : [point.type];
+
+        // 一致が1つも無ければ除外
+        const matched = pointTypes.some(type =>
+            enabledTypes.includes(type)
+        );
+
+        if (!matched) {
             return;
         }
 
