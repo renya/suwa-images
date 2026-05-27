@@ -71,6 +71,9 @@ const gpx = params.get('gpx');
 // points=points-jinja.js,points-spot.js
 const pointsParam = params.get('points');
 
+// type=taisha,onbashira
+const typeParam = params.get('type');
+
 // 緯度経度がある場合
 if (!isNaN(lat) && !isNaN(lng)) {
 
@@ -114,23 +117,36 @@ if (pointsParam) {
 
             if (window.pointLinks) {
 
-                pointLinks.forEach(point => {
+// type指定
+const enabledTypes = typeParam
+    ? typeParam.split(',').map(t => t.trim())
+    : null;
 
-                    const marker = L.marker([
-                        point.lat,
-                        point.lng
-                    ]).addTo(map);
+pointLinks.forEach(point => {
 
-                    marker.bindTooltip(point.name);
+    // type フィルタ
+    if (
+        enabledTypes &&
+        point.type &&
+        !enabledTypes.includes(point.type)
+    ) {
+        return;
+    }
 
-                    marker.on('click', function() {
+    const marker = L.marker([
+        point.lat,
+        point.lng
+    ]).addTo(map);
 
-                        window.location.href = point.url;
+    marker.bindTooltip(point.name);
 
-                    });
+    marker.on('click', function() {
 
-                });
+        window.location.href = point.url;
 
+    });
+
+});
             }
 
         };
