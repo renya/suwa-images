@@ -209,6 +209,14 @@ window.pointLinks = [
     lat: 36.08086640535417,
     lng: 138.08403119965365,
     url: "https://shimosuwa.info/pages/龍の口/"
+  },
+  {
+    name: "みずべ公園",
+    type: ["spot"],
+    _note: no link from pages
+    lat: 36.065084,
+    lng: 138.089631,
+    url: "https://shimosuwa.info/pages/みずべ公園/"
   }
 
 ];
