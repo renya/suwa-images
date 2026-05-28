@@ -128,7 +128,7 @@ window.pointLinks = [
   },
   {
     name: "春宮",
-    type: ["taisha"],
+    type: ["taisha", "onbashira"],
     lat: 36.081362026995286,
     lng: 138.08201063874844,
     url: "https://shimosuwa.info/pages/春宮/"
@@ -177,7 +177,7 @@ window.pointLinks = [
   },
   {
     name: "秋宮",
-    type: ["taisha"],
+    type: ["taisha", "onbashira"],
     lat: 36.07490858768352,
     lng: 138.09031819375076,
     url: "https://shimosuwa.info/pages/秋宮/"
@@ -220,7 +220,7 @@ window.pointLinks = [
   },
   {
     name: "棚木場",
-    type: ["spot"],
+    type: ["onbashira"],
     _note: "with link from pages",
     lat: 36.108603454145566,
     lng: 138.12840882855411,
@@ -228,11 +228,19 @@ window.pointLinks = [
   },
   {
     name: "注連掛",
-    type: ["spot"],
+    type: ["onbashira"],
     _note: "with link from pages",
     lat: 36.09348464839386,
     lng: 138.08562273432045,
     url: "https://shimosuwa.info/pages/注連掛/"
+  },
+  {
+    name: "萩倉大曲",
+    type: ["onbashira"],
+    _note: "no link from pages",
+    lat: 36.09998721493961,
+    lng: 138.10157101317554,
+    url: "https://shimosuwa.info/pages/萩倉大曲/"
   }
 
 ];
