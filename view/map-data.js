@@ -149,7 +149,7 @@ window.pointLinks = [
   },
   {
     name: "木落社",
-    type: ["onbashira", "taisha"],
+    type: ["taisha"],
     lat: 36.10010976099958,
     lng: 138.0916931729625,
     url: "https://shimosuwa.info/pages/木落社/"
