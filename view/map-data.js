@@ -241,6 +241,14 @@ window.pointLinks = [
     lat: 36.09998721493961,
     lng: 138.10157101317554,
     url: "https://shimosuwa.info/pages/萩倉大曲/"
+  },
+  {
+    name: "斧立社",
+    type: ["onbashira"],
+    _note: "with link from pages",
+    lat: 36.103524435064394,
+    lng: 138.10966788662276,
+    url: "https://shimosuwa.info/pages/斧立社/"
   }
 
 ];
