@@ -80,8 +80,8 @@ window.pointLinks = [
   {
     name: "大灯篭",
     type: ["spot", "onbashira"],
-    lat: 36.074476291256325,
-    lng: 138.0809982087262,
+    lat: 36.074369,
+    lng: 138.081021,
     url: "https://shimosuwa.info/pages/大灯篭/"
   },
   {
