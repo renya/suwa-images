@@ -79,7 +79,7 @@ window.pointLinks = [
   },
   {
     name: "大灯篭",
-    type: ["spot"],
+    type: ["spot", "onbashira"],
     lat: 36.074476291256325,
     lng: 138.0809982087262,
     url: "https://shimosuwa.info/pages/大灯篭/"
@@ -143,8 +143,8 @@ window.pointLinks = [
   {
     name: "木落し坂",
     type: ["onbashira", "taisha"],
-    lat: 36.100306700042005,
-    lng: 138.09171673475774,
+    lat: 36.100270,
+    lng: 138.091637,
     url: "https://shimosuwa.info/pages/木落し坂/"
   },
   {
@@ -222,8 +222,8 @@ window.pointLinks = [
     name: "棚木場",
     type: ["onbashira"],
     _note: "with link from pages",
-    lat: 36.108603454145566,
-    lng: 138.12840882855411,
+    lat: 36.108544,
+    lng: 138.128587,
     url: "https://shimosuwa.info/pages/棚木場/"
   },
   {
