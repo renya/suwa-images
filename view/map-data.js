@@ -254,8 +254,8 @@ window.pointLinks = [
     name: "八ヶ岳はらむらワイナリー",
     type: ["wine"],
     _note: "with link from pages",
-    lat: 36.103524435064394,
-    lng: 138.10966788662276,
+    lat: 35.969119,
+    lng: 138.193221,
     url: "https://suwa.info/pages/八ヶ岳はらむらワイナリー/"
   }
 ];
