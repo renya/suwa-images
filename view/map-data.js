@@ -259,3 +259,4 @@ window.pointLinks = [
     url: "https://suwa.info/pages/八ヶ岳はらむらワイナリー/"
   }
 ];
+// hello-20260607
