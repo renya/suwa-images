@@ -249,6 +249,13 @@ window.pointLinks = [
     lat: 36.103524435064394,
     lng: 138.10966788662276,
     url: "https://shimosuwa.info/pages/斧立社/"
+  },
+  {
+    name: "八ヶ岳はらむらワイナリー",
+    type: ["win"],
+    _note: "_",
+    lat: 36.103524435064394,
+    lng: 138.10966788662276,
+    url: "https://suwa.info/pages/八ヶ岳西麓ワインバレー/"
   }
-
 ];
