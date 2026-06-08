@@ -252,10 +252,26 @@ window.pointLinks = [
   },
   {
     name: "八ヶ岳はらむらワイナリー",
-    type: ["wine"],
+    type: ["wine", "sake"],
     _note: "with link from pages",
     lat: 35.96912759572854,
     lng: 138.19322069474677,
     url: "https://suwa.info/pages/八ヶ岳はらむらワイナリー/"
+  },
+  {
+    name: "有頂天醸造",
+    type: ["beer", "sake"],
+    _note: "with link from pages",
+    lat: 36.044437534073204,
+    lng: 138.11821578210626,
+    url: "https://suwa.info/pages/有頂天醸造/"
+  },
+  {
+    name: "御湖鶴",
+    type: ["osake", "sake"],
+    _note: "with link from pages",
+    lat: 36.075530,
+    lng: 138.086504,
+    url: "https://shimosuwa.info/pages/御湖鶴/"
   }
 ];
