@@ -267,11 +267,67 @@ window.pointLinks = [
     url: "https://suwa.info/pages/有頂天醸造/"
   },
   {
+    name: "ムギクラブルーイング",
+    type: ["beer", "sake"],
+    _note: "with link from pages",
+    lat: 36.100115336490795,
+    lng: 138.10391563367756,
+    url: "https://shimosuwa.info/pages/ムギクラブルーイング/"
+  },
+  {
     name: "御湖鶴",
     type: ["osake", "sake"],
     _note: "with link from pages",
     lat: 36.075530,
     lng: 138.086504,
     url: "https://shimosuwa.info/pages/御湖鶴/"
+  },
+  {
+    name: "真澄",
+    type: ["osake", "sake"],
+    _note: "no link from pages",
+    lat: 36.03981063328282,
+    lng: 138.12272424823618,
+    url: "https://suwa.info/pages/真澄/"
+  },
+  {
+    name: "横笛",
+    type: ["osake", "sake"],
+    _note: "no link from pages",
+    lat: 36.041699464144884,
+    lng: 138.12100886947238,
+    url: "https://suwa.info/pages/横笛/"
+  },
+  {
+    name: "舞姫",
+    type: ["osake", "sake"],
+    _note: "no link from pages",
+    lat: 36.04250247501449,
+    lng: 138.12028396560638,
+    url: "https://suwa.info/pages/舞姫/"
+  },
+  {
+    name: "麗人",
+    type: ["osake", "sake"],
+    _note: "no link from pages",
+    lat: 36.04225166208509,
+    lng: 138.1206122992651,
+    url: "https://suwa.info/pages/麗人/"
+  },
+  {
+    name: "本金",
+    type: ["osake", "sake"],
+    _note: "no link from pages",
+    lat: 36.04178093173457,
+    lng: 138.12110243539263,
+    url: "https://suwa.info/pages/本金/"
+  },
+  {
+    name: "ダイヤ菊",
+    type: ["osake", "sake"],
+    _note: "no link from pages",
+    lat: 35.99167448966716,
+    lng: 138.15084974252335,
+    url: "https://suwa.info/pages/ダイヤ菊/"
   }
 ];
