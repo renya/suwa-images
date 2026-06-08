@@ -329,5 +329,21 @@ window.pointLinks = [
     lat: 35.99167448966716,
     lng: 138.15084974252335,
     url: "https://suwa.info/pages/ダイヤ菊/"
+  },
+  {
+    name: "高天",
+    type: ["osake", "sake"],
+    _note: "no link from pages",
+    lat: 36.06810887090729,
+    lng: 138.0541797408433,
+    url: "https://suwa.info/pages/高天/"
+  },
+  {
+    name: "神渡",
+    type: ["osake", "sake"],
+    _note: "no link from pages",
+    lat: 36.06205826373405,
+    lng: 138.04618473992446,
+    url: "https://suwa.info/pages/神渡/"
   }
 ];
