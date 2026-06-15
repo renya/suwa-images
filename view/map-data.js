@@ -285,7 +285,7 @@ window.pointLinks = [
   {
     name: "真澄",
     type: ["osake", "sake"],
-    _note: "no link from pages",
+    _note: "with link from pages",
     lat: 36.03981063328282,
     lng: 138.12272424823618,
     url: "https://suwa.info/pages/真澄/"
@@ -293,7 +293,7 @@ window.pointLinks = [
   {
     name: "横笛",
     type: ["osake", "sake"],
-    _note: "no link from pages",
+    _note: "with link from pages",
     lat: 36.041699464144884,
     lng: 138.12100886947238,
     url: "https://suwa.info/pages/横笛/"
@@ -301,7 +301,7 @@ window.pointLinks = [
   {
     name: "舞姫",
     type: ["osake", "sake"],
-    _note: "no link from pages",
+    _note: "with link from pages",
     lat: 36.04250247501449,
     lng: 138.12028396560638,
     url: "https://suwa.info/pages/舞姫/"
@@ -309,7 +309,7 @@ window.pointLinks = [
   {
     name: "麗人",
     type: ["osake", "sake"],
-    _note: "no link from pages",
+    _note: "with link from pages",
     lat: 36.04225166208509,
     lng: 138.1206122992651,
     url: "https://suwa.info/pages/麗人/"
@@ -317,7 +317,7 @@ window.pointLinks = [
   {
     name: "本金",
     type: ["osake", "sake"],
-    _note: "no link from pages",
+    _note: "with link from pages",
     lat: 36.04178093173457,
     lng: 138.12110243539263,
     url: "https://suwa.info/pages/本金/"
@@ -325,7 +325,7 @@ window.pointLinks = [
   {
     name: "ダイヤ菊",
     type: ["osake", "sake"],
-    _note: "no link from pages",
+    _note: "with link from pages",
     lat: 35.99167448966716,
     lng: 138.15084974252335,
     url: "https://suwa.info/pages/ダイヤ菊/"
@@ -333,7 +333,7 @@ window.pointLinks = [
   {
     name: "高天",
     type: ["osake", "sake"],
-    _note: "no link from pages",
+    _note: "with link from pages",
     lat: 36.06810887090729,
     lng: 138.0541797408433,
     url: "https://suwa.info/pages/高天/"
@@ -341,7 +341,7 @@ window.pointLinks = [
   {
     name: "神渡",
     type: ["osake", "sake"],
-    _note: "no link from pages",
+    _note: "with link from pages",
     lat: 36.06205826373405,
     lng: 138.04618473992446,
     url: "https://suwa.info/pages/神渡/"
