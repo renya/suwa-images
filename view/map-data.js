@@ -417,5 +417,13 @@ window.pointLinks = [
     lat: 36.07750446479038,
     lng: 138.08889222063573,
     url: "https://shimosuwa.info/pages/鉄鉱泉本館/"
+  },
+  {
+    name: "マークヴィラ諏訪湖",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.06348820610361,
+    lng: 138.07974690309047,
+    url: "https://shimosuwa.info/pages/マークヴィラ諏訪湖/"
   }
 ];
