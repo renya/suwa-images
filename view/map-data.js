@@ -425,5 +425,13 @@ window.pointLinks = [
     lat: 36.06348820610361,
     lng: 138.07974690309047,
     url: "https://shimosuwa.info/pages/マークヴィラ諏訪湖/"
+  },
+  {
+    name: "モン蓼科",
+    type: ["buy", "osake"],
+    _note: "with link from pages",
+    lat: 35.994253,
+    lng: 138.152111,
+    url: "https://shimosuwa.info/pages/モン蓼科/"
   }
 ];
