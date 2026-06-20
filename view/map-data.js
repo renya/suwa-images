@@ -409,5 +409,13 @@ window.pointLinks = [
     lat: 36.0754147923706,
     lng: 138.08510967885357,
     url: "https://shimosuwa.info/pages/マスヤゲストハウス/"
+  },
+  {
+    name: "鉄鉱泉本館",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.07750446479038,
+    lng: 138.08889222063573,
+    url: "https://shimosuwa.info/pages/鉄鉱泉本館/"
   }
 ];
