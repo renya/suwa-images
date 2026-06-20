@@ -382,16 +382,16 @@ window.pointLinks = [
     name: "梅月",
     type: ["yado", "onsen"],
     _note: "with link from pages",
-    lat: 36.076364143042234,
-    lng: 138.0880475304628,
+    lat: 36.076345,
+    lng: 138.088049,
     url: "https://shimosuwa.info/pages/梅月/"
   },
   {
     name: "みなとや旅館",
     type: ["yado", "onsen"],
     _note: "with link from pages",
-    lat: 36.07563777216087,
-    lng: 138.08958309286413,
+    lat: 36.075608,
+    lng: 138.089615,
     url: "https://shimosuwa.info/pages/みなとや旅館/"
   },
   {
