@@ -345,5 +345,69 @@ window.pointLinks = [
     lat: 36.06205826373405,
     lng: 138.04618473992446,
     url: "https://suwa.info/pages/神渡/"
+  },
+  {
+    name: "グリーンサンホテル",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.07280053714126,
+    lng: 138.0848254599213,
+    url: "https://shimosuwa.info/pages/グリーンサンホテル/"
+  },
+  {
+    name: "ぎん月",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.07621972860526,
+    lng: 138.08852125466666,
+    url: "https://shimosuwa.info/pages/ぎん月/"
+  },
+  {
+    name: "聴泉閣かめや",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.07599882025312,
+    lng: 138.09055153899934,
+    url: "https://shimosuwa.info/pages/聴泉閣かめや/"
+  },
+  {
+    name: "御宿まるや",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.075848695836704,
+    lng: 138.08995072422667,
+    url: "https://shimosuwa.info/pages/御宿まるや/"
+  },
+  {
+    name: "梅月",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.076364143042234,
+    lng: 138.0880475304628,
+    url: "https://shimosuwa.info/pages/梅月/"
+  },
+  {
+    name: "みなとや旅館",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.07563777216087,
+    lng: 138.08958309286413,
+    url: "https://shimosuwa.info/pages/みなとや旅館/"
+  },
+  {
+    name: "旅館_奴",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.07569332379511,
+    lng: 138.0896085738535,
+    url: "https://shimosuwa.info/pages/旅館_奴/"
+  },
+  {
+    name: "マスヤゲストハウス",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.0754147923706,
+    lng: 138.08510967885357,
+    url: "https://shimosuwa.info/pages/マスヤゲストハウス/"
   }
 ];
