@@ -428,7 +428,7 @@ window.pointLinks = [
   },
   {
     name: "モン蓼科",
-    type: ["buy", "osake"],
+    type: ["buy", "sake"],
     _note: "with link from pages",
     lat: 35.994253,
     lng: 138.152111,
