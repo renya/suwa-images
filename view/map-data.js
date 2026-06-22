@@ -433,5 +433,13 @@ window.pointLinks = [
     lat: 35.994253,
     lng: 138.152111,
     url: "https://shimosuwa.info/pages/モン蓼科/"
+  },
+  {
+    name: "桔梗屋",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.0758141376578,
+    lng: 138.09001034654233,
+    url: "https://shimosuwa.info/pages/桔梗屋/"
   }
 ];
