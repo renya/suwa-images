@@ -441,5 +441,13 @@ window.pointLinks = [
     lat: 36.0758141376578,
     lng: 138.09001034654233,
     url: "https://shimosuwa.info/pages/桔梗屋/"
+  },
+  {
+    name: "大増旅館",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.076638061349776,
+    lng: 138.0861703457545,
+    url: "https://shimosuwa.info/pages/大増旅館/"
   }
 ];
