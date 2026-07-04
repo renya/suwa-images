@@ -449,5 +449,21 @@ window.pointLinks = [
     lat: 36.076638061349776,
     lng: 138.0861703457545,
     url: "https://shimosuwa.info/pages/大増旅館/"
+  },
+  {
+    name: "地酒の信濃屋",
+    type: ["buy", "sake"],
+    _note: "with link from pages",
+    lat: 36.02651658885572,
+    lng: 138.1154020815543,
+    url: "https://shimosuwa.info/pages/地酒の信濃屋/"
+  },
+  {
+    name: "長崎酒店",
+    type: ["buy", "sake"],
+    _note: "with link from pages",
+    lat: 36.06300451746654,
+    lng: 138.1060799041701,
+    url: "https://shimosuwa.info/pages/長崎酒店/"
   }
 ];
