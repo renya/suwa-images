@@ -468,7 +468,7 @@ window.pointLinks = [
   },
   {
     name: "灯湯すずらん",
-    type: ["yado", "onsen"],
+    type: ["onsen"],
     _note: "with link from pages",
     lat: 36.104097590939055,
     lng: 138.23771208848183,
