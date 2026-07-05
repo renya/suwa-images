@@ -465,5 +465,13 @@ window.pointLinks = [
     lat: 36.06300451746654,
     lng: 138.1060799041701,
     url: "https://shimosuwa.info/pages/長崎酒店/"
+  },
+  {
+    name: "灯湯すずらん",
+    type: ["yado", "onsen"],
+    _note: "with link from pages",
+    lat: 36.104097590939055,
+    lng: 138.23771208848183,
+    url: "https://shimosuwa.info/pages/灯湯すずらん/"
   }
 ];
