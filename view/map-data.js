@@ -473,5 +473,13 @@ window.pointLinks = [
     lat: 36.104097590939055,
     lng: 138.23771208848183,
     url: "https://shimosuwa.info/pages/灯湯すずらん/"
+  },
+  {
+    name: "御射山社",
+    type: ["taisha"],
+    _note: "with link from pages",
+    lat: 36.0909983462937,
+    lng: 138.11091244566273,
+    url: "https://shimosuwa.info/pages/御射山社/"
   }
 ];
