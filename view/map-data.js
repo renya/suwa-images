@@ -481,5 +481,13 @@ window.pointLinks = [
     lat: 36.0909983462937,
     lng: 138.11091244566273,
     url: "https://shimosuwa.info/pages/御射山社/"
+  },
+  {
+    name: "小さな古民家_庵",
+    type: ["yado""],
+    _note: "with link from pages",
+    lat: 36.07693884358864,
+    lng: 138.08516497231884,
+    url: "https://shimosuwa.info/pages/小さな古民家_庵/"
   }
 ];
