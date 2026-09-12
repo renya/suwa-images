@@ -484,7 +484,7 @@ window.pointLinks = [
   },
   {
     name: "小さな古民家_庵",
-    type: ["yado""],
+    type: ["yado"],
     _note: "with link from pages",
     lat: 36.07693884358864,
     lng: 138.08516497231884,
@@ -492,7 +492,7 @@ window.pointLinks = [
   },
   {
     name: "ユーペンハウス",
-    type: ["yado""],
+    type: ["yado"],
     _note: "with link from pages",
     lat: 36.06361282841987,
     lng: 138.10775282330593,
@@ -500,7 +500,7 @@ window.pointLinks = [
   },
   {
     name: "ゲストハウス_春うらら",
-    type: ["yado""],
+    type: ["yado"],
     _note: "with link from pages",
     lat: 36.065576579310154,
     lng: 138.10628218549382,
@@ -508,7 +508,7 @@ window.pointLinks = [
   },
   {
     name: "まちやど半歩",
-    type: ["yado""],
+    type: ["yado"],
     _note: "with link from pages",
     lat: 36.07591467739247,
     lng: 138.08772610735068,
