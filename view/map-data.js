@@ -489,5 +489,29 @@ window.pointLinks = [
     lat: 36.07693884358864,
     lng: 138.08516497231884,
     url: "https://shimosuwa.info/pages/小さな古民家_庵/"
+  },
+  {
+    name: "ユーペンハウス",
+    type: ["yado""],
+    _note: "with link from pages",
+    lat: 36.06361282841987,
+    lng: 138.10775282330593,
+    url: "https://shimosuwa.info/pages/ユーペンハウス/"
+  },
+  {
+    name: "ゲストハウス_春うらら",
+    type: ["yado""],
+    _note: "with link from pages",
+    lat: 36.065576579310154,
+    lng: 138.10628218549382,
+    url: "https://shimosuwa.info/pages/ゲストハウス_春うらら/"
+  },
+  {
+    name: "まちやど半歩",
+    type: ["yado""],
+    _note: "with link from pages",
+    lat: 36.07591467739247,
+    lng: 138.08772610735068,
+    url: "https://shimosuwa.info/pages/まちやど半歩/"
   }
 ];
