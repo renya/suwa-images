@@ -510,8 +510,16 @@ window.pointLinks = [
     name: "まちやど半歩",
     type: ["yado"],
     _note: "with link from pages",
-    lat: 36.07591467739247,
-    lng: 138.08772610735068,
+    lat: 36.075855,
+    lng: 1138.087721,
     url: "https://shimosuwa.info/pages/まちやど半歩/"
+  },
+  {
+    name: "マークヴィラ_スイート",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 36.06346726645773,
+    lng: 138.0798521582556,
+    url: "https://shimosuwa.info/pages/マークヴィラ_スイート/"
   }
 ];
