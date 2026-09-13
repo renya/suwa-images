@@ -511,7 +511,7 @@ window.pointLinks = [
     type: ["yado"],
     _note: "with link from pages",
     lat: 36.075855,
-    lng: 1138.087721,
+    lng: 138.087721,
     url: "https://shimosuwa.info/pages/まちやど半歩/"
   },
   {
