@@ -542,8 +542,16 @@ window.pointLinks = [
     name: "鷲ヶ峰ひゅって",
     type: ["yado"],
     _note: "with link from pages",
-    lat: 36.118838049921074,
-    lng: 138.1584841291676,
+    lat: 36.118212,
+    lng: 138.159084,
     url: "https://shimosuwa.info/pages/鷲ヶ峰ひゅって/"
+  },
+  {
+    name: "神乃湯",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 36.094937103794294,
+    lng: 138.08238696115373,
+    url: "https://shimosuwa.info/pages/神乃湯/"
   }
 ];
