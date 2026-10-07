@@ -521,5 +521,29 @@ window.pointLinks = [
     lat: 36.06346726645773,
     lng: 138.0798521582556,
     url: "https://shimosuwa.info/pages/マークヴィラ_スイート/"
+  },
+  {
+    name: "宮乃湯",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 36.092343449459264,
+    lng: 138.08427078143657,
+    url: "https://shimosuwa.info/pages/宮乃湯/"
+  },
+  {
+    name: "高原荘",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 36.11682612510715,
+    lng: 138.1584841291676,
+    url: "https://shimosuwa.info/pages/高原荘/"
+  },
+  {
+    name: "鷲ヶ峰ひゅって",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 36.118838049921074,
+    lng: 138.1584841291676,
+    url: "https://shimosuwa.info/pages/鷲ヶ峰ひゅって/"
   }
 ];
