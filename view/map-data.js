@@ -553,5 +553,29 @@ window.pointLinks = [
     lat: 36.094937103794294,
     lng: 138.08238696115373,
     url: "https://shimosuwa.info/pages/神乃湯/"
+  },
+  {
+    name: "万治屋",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 36.073450112300904,
+    lng: 138.08534911196978,
+    url: "https://shimosuwa.info/pages/万治屋/"
+  },
+  {
+    name: "mawari",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 36.02969404005566,
+    lng: 138.07311135926344,
+    url: "https://suwa.info/pages/mawari/"
+  },
+  {
+    name: "iki",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 35.99708153777372,
+    lng: 138.1266887250575,
+    url: "https://suwa.info/pages/iki/"
   }
 ];
