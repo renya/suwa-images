@@ -769,5 +769,85 @@ window.pointLinks = [
     lat: 35.99978267309565,
     lng: 138.13582897933333,
     url: "https://suwa.info/pages/ABホテル茅野/"
+  },
+  {
+    name: "八剱神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.040319605718125,
+    lng: 138.12011791437484,
+    url: "https://suwa.info/pages/八剱神社/"
+  },
+  {
+    name: "小坂鎮守神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.03393456090826,
+    lng: 138.06614121956605,
+    url: "https://suwa.info/pages/小坂鎮守神社/"
+  },
+  {
+    name: "先宮神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.054701014583564,
+    lng: 138.11722581133503,
+    url: "https://suwa.info/pages/先宮神社/"
+  },
+  {
+    name: "荻宮社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.02658286808229,
+    lng: 138.13276153351305,
+    url: "https://suwa.info/pages/荻宮社/"
+  },
+  {
+    name: "酒室神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.9805911420564,
+    lng: 138.16598705166766,
+    url: "https://suwa.info/pages/酒室神社/"
+  },
+  {
+    name: "下馬社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.9956168956072,
+    lng: 138.15038538812263,
+    url: "https://suwa.info/pages/下馬社/"
+  },
+  {
+    name: "御室社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.99225467205182,
+    lng: 138.13399982034514,
+    url: "https://suwa.info/pages/御室社/"
+  },
+  {
+    name: "磯並山社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.98808321012264,
+    lng: 138.12386817248552,
+    url: "https://suwa.info/pages/磯並山社/"
+  },
+  {
+    name: "武居会美酒",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.99394911115781,
+    lng: 138.12413795816116,
+    url: "https://suwa.info/pages/武居会美酒/"
+  },
+  {
+    name: "神殿中部屋",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.000582197548944,
+    lng: 138.126870396621,
+    url: "https://suwa.info/pages/神殿中部屋/"
   }
 ];
