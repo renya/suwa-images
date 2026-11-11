@@ -761,5 +761,13 @@ window.pointLinks = [
     lat: 35.962095943075525,
     lng: 138.21395568568056,
     url: "https://suwa.info/pages/闢尾社/"
+  },
+  {
+    name: "ABホテル茅野",
+    type: ["yado"],
+    _note: "with link from pages",
+    lat: 35.99978267309565,
+    lng: 138.13582897933333,
+    url: "https://suwa.info/pages/ABホテル茅野/"
   }
 ];
