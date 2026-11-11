@@ -43,20 +43,6 @@ window.pointLinks = [
     url: "https://shimosuwa.info/pages/下馬橋/"
   },
   {
-    name: "先宮神社",
-    type: ["spot"],
-    lat: 36.054701014583564,
-    lng: 138.11722581133503,
-    url: "https://shimosuwa.info/pages/先宮神社/"
-  },
-  {
-    name: "八剱神社",
-    type: ["spot"],
-    lat: 36.040319605718125,
-    lng: 138.12011791437484,
-    url: "https://shimosuwa.info/pages/八剱神社/"
-  },
-  {
     name: "八島あざみ館",
     type: ["spot"],
     lat: 36.119901332888595,
@@ -73,8 +59,8 @@ window.pointLinks = [
   {
     name: "前宮",
     type: ["taisha", "spot", "kami39"],
-    lat: 35.993093506286,
-    lng: 138.13487541989392,
+    lat: 35.991311,
+    lng: 138.133566,
     url: "https://shimosuwa.info/pages/前宮/"
   },
   {
@@ -772,7 +758,7 @@ window.pointLinks = [
   },
   {
     name: "八剱神社",
-    type: ["kami39"],
+    type: ["kami39", "spot"],
     _note: "with link from pages",
     lat: 36.040319605718125,
     lng: 138.12011791437484,
@@ -788,7 +774,7 @@ window.pointLinks = [
   },
   {
     name: "先宮神社",
-    type: ["kami39"],
+    type: ["kami39", "spot"],
     _note: "with link from pages",
     lat: 36.054701014583564,
     lng: 138.11722581133503,
