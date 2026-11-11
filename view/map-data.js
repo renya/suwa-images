@@ -704,8 +704,8 @@ window.pointLinks = [
     name: "御座石神社",
     type: ["kami39"],
     _note: "with link from pages",
-    lat: 36.002936886168136,
-    lng: 138.1410678916159,
+    lat: 36.002310534772306,
+    lng: 138.17361315452794,
     url: "https://suwa.info/pages/御座石神社/"
   },
   {
@@ -800,8 +800,8 @@ window.pointLinks = [
     name: "下馬社",
     type: ["kami39"],
     _note: "with link from pages",
-    lat: 35.9956168956072,
-    lng: 138.15038538812263,
+    lat: 35.99651078585315,
+    lng: 138.13022877838682,
     url: "https://suwa.info/pages/下馬社/"
   },
   {
