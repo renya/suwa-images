@@ -78,13 +78,6 @@ window.pointLinks = [
     url: "https://shimosuwa.info/pages/御作田社/"
   },
   {
-    name: "御湖鶴",
-    type: ["buy"],
-    lat: 36.075530,
-    lng: 138.086504,
-    url: "https://shimosuwa.info/pages/御湖鶴/"
-  },
-  {
     name: "慈雲寺",
     type: ["spot"],
     lat: 36.082610755302994,
@@ -600,8 +593,8 @@ window.pointLinks = [
     name: "荒玉社",
     type: ["kami39"],
     _note: "with link from pages",
-    lat: 35.9956168956072,
-    lng: 138.15038538812263,
+    lat: 35.993471940687655,
+    lng: 138.1349942695749,
     url: "https://suwa.info/pages/荒玉社/"
   },
   {
