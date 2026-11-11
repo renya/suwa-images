@@ -72,7 +72,7 @@ window.pointLinks = [
   },
   {
     name: "前宮",
-    type: ["taisha", "spot"],
+    type: ["taisha", "spot", "kami39"],
     lat: 35.993093506286,
     lng: 138.13487541989392,
     url: "https://shimosuwa.info/pages/前宮/"
@@ -577,5 +577,189 @@ window.pointLinks = [
     lat: 35.99708153777372,
     lng: 138.1266887250575,
     url: "https://suwa.info/pages/iki/"
+  },
+  {
+    name: "所政社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.993248297752864,
+    lng: 138.1334152357743,
+    url: "https://suwa.info/pages/所政社/"
+  },
+  {
+    name: "磯並社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.98939969163181,
+    lng: 138.12471489328476,
+    url: "https://suwa.info/pages/磯並社/"
+  },
+  {
+    name: "大年社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.9956168956072,
+    lng: 138.15038538812263,
+    url: "https://suwa.info/pages/大年社/"
+  },
+  {
+    name: "荒玉社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.9956168956072,
+    lng: 138.15038538812263,
+    url: "https://suwa.info/pages/荒玉社/"
+  },
+  {
+    name: "千野川社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.98445696817534,
+    lng: 138.14721134758074,
+    url: "https://suwa.info/pages/千野川社/"
+  },
+  {
+    name: "若御子社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.99253820120078,
+    lng: 138.13417836862195,
+    url: "https://suwa.info/pages/若御子社/"
+  },
+  {
+    name: "柏手社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.991784503239856,
+    lng: 138.13464559999716,
+    url: "https://suwa.info/pages/柏手社/"
+  },
+  {
+    name: "葛井神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.002936886168136,
+    lng: 138.1410678916159,
+    url: "https://suwa.info/pages/葛井神社/"
+  },
+  {
+    name: "溝上社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.993099226032314,
+    lng: 138.13471751960716,
+    url: "https://suwa.info/pages/溝上社/"
+  },
+  {
+    name: "瀬神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.989344,
+    lng: 138.124763,
+    url: "https://suwa.info/pages/瀬神社/"
+  },
+  {
+    name: "玉尾社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.98973559622347,
+    lng: 138.124240411677,
+    url: "https://suwa.info/pages/玉尾社/"
+  },
+  {
+    name: "穂股社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.989548,
+    lng: 138.124613,
+    url: "https://suwa.info/pages/穂股社/"
+  },
+  {
+    name: "藤島社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.00274938821935,
+    lng: 138.1191444122094,
+    url: "https://suwa.info/pages/藤島社/"
+  },
+  {
+    name: "内御玉殿",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.992442717028304,
+    lng: 138.13411705670674,
+    url: "https://suwa.info/pages/内御玉殿/"
+  },
+  {
+    name: "鶏冠社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.99240277384384,
+    lng: 138.13338758483926,
+    url: "https://suwa.info/pages/鶏冠社/"
+  },
+  {
+    name: "達屋酢蔵神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.995216307247475,
+    lng: 138.14765491042908,
+    url: "https://suwa.info/pages/達屋酢蔵神社/"
+  },
+  {
+    name: "習焼神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.009678316778334,
+    lng: 138.0980778912635,
+    url: "https://suwa.info/pages/習焼神社/"
+  },
+  {
+    name: "御座石神社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 36.002936886168136,
+    lng: 138.1410678916159,
+    url: "https://suwa.info/pages/御座石神社/"
+  },
+  {
+    name: "相本社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.99513261120672,
+    lng: 138.13155009689913,
+    url: "https://suwa.info/pages/相本社/"
+  },
+  {
+    name: "若宮八幡社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.99684447662825,
+    lng: 138.12228120924797,
+    url: "https://suwa.info/pages/若宮八幡社/"
+  },
+  {
+    name: "大四御庵",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.94033488243732,
+    lng: 138.2192688329747,
+    url: "https://suwa.info/pages/大四御庵/"
+  },
+  {
+    name: "山御庵",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.93990226041438,
+    lng: 138.21856893868653,
+    url: "https://suwa.info/pages/山御庵/"
+  },
+  {
+    name: "闢尾社",
+    type: ["kami39"],
+    _note: "with link from pages",
+    lat: 35.962095943075525,
+    lng: 138.21395568568056,
+    url: "https://suwa.info/pages/闢尾社/"
   }
 ];
