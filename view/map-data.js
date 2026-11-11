@@ -576,9 +576,17 @@ window.pointLinks = [
     name: "磯並社",
     type: ["kami39"],
     _note: "with link from pages",
+    lat: 35.989344,
+    lng: 138.124763,
+    url: "https://suwa.info/pages/磯並社/"
+  },
+  {
+    name: "瀬神社",
+    type: ["kami39"],
+    _note: "with link from pages",
     lat: 35.98939969163181,
     lng: 138.12471489328476,
-    url: "https://suwa.info/pages/磯並社/"
+    url: "https://suwa.info/pages/瀬神社/"
   },
   {
     name: "大年社",
@@ -635,14 +643,6 @@ window.pointLinks = [
     lat: 35.993099226032314,
     lng: 138.13471751960716,
     url: "https://suwa.info/pages/溝上社/"
-  },
-  {
-    name: "瀬神社",
-    type: ["kami39"],
-    _note: "with link from pages",
-    lat: 35.989344,
-    lng: 138.124763,
-    url: "https://suwa.info/pages/瀬神社/"
   },
   {
     name: "玉尾社",
