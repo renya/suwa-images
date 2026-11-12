@@ -67,6 +67,7 @@ if (!slug || !url) {
 const GA = {
     "shimosuwa.info": "G-JDE490GKVT",
     "suwa.info":      "G-6XFB1XKL4T",
+    "i.suwa.info":      "G-6XFB1XKL4T",
     "renya.com":      "G-5RHMQ2CTBP"
 };
 
