@@ -828,5 +828,61 @@ window.pointLinks = [
     lat: 36.000582197548944,
     lng: 138.126870396621,
     url: "https://suwa.info/pages/神殿中部屋/"
+  },
+  {
+    name: "星くそ館",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.15183628385667,
+    lng: 138.21089095307843,
+    url: "https://shimosuwa.info/pages/星くそ館/"
+  },
+  {
+    name: "殿村遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.06700553430322,
+    lng: 138.10606095835126,
+    url: "https://shimosuwa.info/pages/殿村遺跡/"
+  },
+  {
+    name: "尖石遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.01320968506918,
+    lng: 138.23210827856818,
+    url: "https://suwa.info/pages/尖石遺跡/"
+  },
+  {
+    name: "与助尾根遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.01424836458714,
+    lng: 138.23371838937584,
+    url: "https://suwa.info/pages/与助尾根遺跡/"
+  },
+  {
+    name: "棚畑遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.02129013866263,
+    lng: 138.1720474029948,
+    url: "https://suwa.info/pages/棚畑遺跡/"
+  },
+  {
+    name: "中ッ原縄文公園",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.03046466076838,
+    lng: 138.21385055467323,
+    url: "https://suwa.info/pages/中ッ原縄文公園/"
+  },
+  {
+    name: "阿久遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 35.964568679086206,
+    lng: 138.1909222495244,
+    url: "https://suwa.info/pages/阿久遺跡/"
   }
 ];
