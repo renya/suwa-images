@@ -884,5 +884,13 @@ window.pointLinks = [
     lat: 35.964568679086206,
     lng: 138.1909222495244,
     url: "https://suwa.info/pages/阿久遺跡/"
+  },
+  {
+    name: "尖石縄文考古館",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.01351065781559,
+    lng: 138.23433027800306,
+    url: "https://suwa.info/pages/尖石縄文考古館/"
   }
 ];
