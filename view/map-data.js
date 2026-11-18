@@ -900,5 +900,13 @@ window.pointLinks = [
     lat: 35.995504852029136,
     lng: 138.12366809610478,
     url: "https://suwa.info/pages/武居畑遺跡/"
+  },
+  {
+    name: "星ヶ塔遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.13669859021211,
+    lng: 138.14802234604755,
+    url: "https://suwa.info/pages/星ヶ塔遺跡/"
   }
 ];
