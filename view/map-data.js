@@ -892,5 +892,13 @@ window.pointLinks = [
     lat: 36.01351065781559,
     lng: 138.23433027800306,
     url: "https://suwa.info/pages/尖石縄文考古館/"
+  },
+  {
+    name: "武居畑遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 35.995504852029136,
+    lng: 138.12366809610478,
+    url: "https://suwa.info/pages/武居畑遺跡/"
   }
 ];
