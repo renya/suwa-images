@@ -908,5 +908,13 @@ window.pointLinks = [
     lat: 36.13669859021211,
     lng: 138.14802234604755,
     url: "https://suwa.info/pages/星ヶ塔遺跡/"
+  },
+  {
+    name: "しもすわ今昔館おいでや",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.07561382023266,
+    lng: 138.08941327859208,
+    url: "https://suwa.info/pages/しもすわ今昔館おいでや/"
   }
 ];
