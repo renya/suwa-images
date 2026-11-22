@@ -932,5 +932,21 @@ window.pointLinks = [
     lat: 35.8778467209324,
     lng: 138.2770059911186,
     url: "https://suwa.info/pages/井戸尻考古館/"
+  },
+  {
+    name: "井戸尻遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 35.87764704930607,
+    lng: 138.27869608936004,
+    url: "https://suwa.info/pages/井戸尻遺跡/"
+  },
+  {
+    name: "諏訪市博物館",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.00028484747055,
+    lng: 138.12119885300268,
+    url: "https://suwa.info/pages/諏訪市博物館/"
   }
 ];
