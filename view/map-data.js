@@ -948,5 +948,13 @@ window.pointLinks = [
     lat: 36.00028484747055,
     lng: 138.12119885300268,
     url: "https://suwa.info/pages/諏訪市博物館/"
+  },
+  {
+    name: "曽利遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 35.87810587549805,
+    lng: 138.2768689638716,
+    url: "https://suwa.info/pages/曽利遺跡/"
   }
 ];
