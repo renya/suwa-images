@@ -924,5 +924,13 @@ window.pointLinks = [
     lat: 36.053900274846306,
     lng: 138.11191750620523,
     url: "https://suwa.info/pages/曽根遺跡/"
+  },
+  {
+    name: "井戸尻考古館",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 35.8778467209324,
+    lng: 138.2770059911186,
+    url: "https://suwa.info/pages/井戸尻考古館/"
   }
 ];
