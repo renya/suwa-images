@@ -953,8 +953,8 @@ window.pointLinks = [
     name: "曽利遺跡",
     type: ["jomon"],
     _note: "with link from pages",
-    lat: 35.87810587549805,
-    lng: 138.2768689638716,
+    lat: 35.877744043839286,
+    lng: 138.27682749774527,
     url: "https://suwa.info/pages/曽利遺跡/"
   }
 ];
