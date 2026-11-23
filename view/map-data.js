@@ -911,7 +911,7 @@ window.pointLinks = [
   },
   {
     name: "しもすわ今昔館おいでや",
-    type: ["jomon"],
+    type: ["spot"],
     _note: "with link from pages",
     lat: 36.07561382023266,
     lng: 138.08941327859208,
@@ -956,5 +956,29 @@ window.pointLinks = [
     lat: 35.877744043839286,
     lng: 138.27682749774527,
     url: "https://suwa.info/pages/曽利遺跡/"
+  },
+  {
+    name: "矢の根や",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.0760505602585,
+    lng: 138.08904474171763,
+    url: "https://shimosuwa.info/pages/矢の根や/"
+  },
+  {
+    name: "岡谷美術考古館",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.058919759544466,
+    lng: 138.04699749717457,
+    url: "https://suwa.info/pages/岡谷美術考古館/"
+  },
+  {
+    name: "八ヶ岳美術館",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 35.96787192085613,
+    lng: 138.2771509121255,
+    url: "https://suwa.info/pages/八ヶ岳美術館/"
   }
 ];
