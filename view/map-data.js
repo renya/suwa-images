@@ -980,5 +980,13 @@ window.pointLinks = [
     lat: 35.96787192085613,
     lng: 138.2771509121255,
     url: "https://suwa.info/pages/八ヶ岳美術館/"
+  },
+  {
+    name: "藤内遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 35.890674629836035,
+    lng: 138.2747200878093,
+    url: "https://suwa.info/pages/藤内遺跡/"
   }
 ];
