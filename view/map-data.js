@@ -993,8 +993,8 @@ window.pointLinks = [
     name: "海戸遺跡",
     type: ["jomon"],
     _note: "with link from pages",
-    lat: 35.890674629836035,
-    lng: 138.2747200878093,
+    lat: 36.058775,
+    lng: 138.049436,
     url: "https://suwa.info/pages/海戸遺跡/"
   },
   {
@@ -1017,8 +1017,8 @@ window.pointLinks = [
     name: "十二ノ后遺跡",
     type: ["jomon"],
     _note: "with link from pages",
-    lat: 36.020311,
-    lng: 138.081394,
+    lat: 36.020286,
+    lng: 138.081332,
     url: "https://suwa.info/pages/十二ノ后遺跡/"
   }
 ];
