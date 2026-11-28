@@ -996,5 +996,21 @@ window.pointLinks = [
     lat: 35.890674629836035,
     lng: 138.2747200878093,
     url: "https://suwa.info/pages/海戸遺跡/"
+  },
+  {
+    name: "広畑遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.051882,
+    lng: 138.020690,
+    url: "https://suwa.info/pages/広畑遺跡/"
+  },
+  {
+    name: "千鹿頭社",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.022781,
+    lng: 138.081665,
+    url: "https://suwa.info/pages/有賀千鹿頭神社/"
   }
 ];
