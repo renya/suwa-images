@@ -1012,5 +1012,13 @@ window.pointLinks = [
     lat: 36.022781,
     lng: 138.081665,
     url: "https://suwa.info/pages/有賀千鹿頭神社/"
+  },
+  {
+    name: "十二ノ后遺跡",
+    type: ["jomon"],
+    _note: "with link from pages",
+    lat: 36.020311,
+    lng: 138.081394,
+    url: "https://suwa.info/pages/十二ノ后遺跡/"
   }
 ];
