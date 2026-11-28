@@ -1001,8 +1001,8 @@ window.pointLinks = [
     name: "広畑遺跡",
     type: ["jomon"],
     _note: "with link from pages",
-    lat: 36.051882,
-    lng: 138.020690,
+    lat: 36.051857,
+    lng: 138.020677,
     url: "https://suwa.info/pages/広畑遺跡/"
   },
   {
